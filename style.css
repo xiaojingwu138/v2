@@ -1,0 +1,44 @@
+$axis-color: #000
+$bar-standard-color: #4682b4
+$bar-selected-color: #17bf3c
+$tooltip-background-color: #b0c4de
+$tooltip-span-color: #d11515
+$font: 'Lobster'
+
+.bar
+  fill: $bar-standard-color
+
+
+
+.axis
+  font-family: $font
+  font-size: 12px
+
+.axis path,
+.axis line
+  fill: none
+  shape-rendering: crispEdges
+  stroke: $axis-color
+
+.x.axis path
+  display: none
+
+.y.axis text
+  fill: $axis-color
+
+.tooltip
+  background: $tooltip-background-color
+  border: 0
+  border-radius: 8px
+  font-family: $font
+  font-size: 12px
+  font-weight: bold
+  height: 20px
+  padding: 2px
+  pointer-events: none
+  position: absolute
+  text-align: center
+  width: 120px
+
+  span
+    color: $tooltip-span-color
